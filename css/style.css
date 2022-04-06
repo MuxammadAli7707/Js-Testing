@@ -29,9 +29,7 @@ body {
 .bxs-lock-alt {
   margin-right: 10px;
 }
-.back {
-  background-color: #fff;
-}
+
 .btn__ikon {
   color: #fff;
   border: none;
@@ -53,10 +51,13 @@ body {
 }
 
 .list {
+  display: none;
   padding: 20px 40px;
   background-color: #000;
   list-style: none;
+  border-radius: 5px;
 }
+
 .btnx {
   border: none;
   background-color: transparent;
@@ -69,10 +70,4 @@ body {
   align-items: center;
   color: #fff;
   margin-bottom: 15px;
-}
-.bx {
-}
-.bx-x {
-}
-.upper {
 }

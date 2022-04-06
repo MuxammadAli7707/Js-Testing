@@ -1,6 +1,5 @@
 // Problem 1
 
-
 // let massArray = [10, 1, 3, 5, 8, 9];
 
 // for(let i = 0; i < massArray.length; i++){
@@ -104,3 +103,31 @@
 // }
 
 // console.log(elNewArr);
+
+
+const eye = document.getElementById("eye");
+const form = document.querySelector(".form__box");
+const input = document.getElementById("input");
+const left = document.getElementById("left");
+const list = document.getElementById("list");
+const x = document.getElementById("x");
+const elForm = document.querySelector(".form");
+
+eye.addEventListener("click", (e)=> {
+  e.preventDefault();
+  form.style.backgroundColor = "#fff";
+  left.style.color = "#000";
+  eye.style.color = "#000";
+  input.style.color = "#000";
+
+});
+
+form.addEventListener('keydown', ()=>{
+  let val = input.value;
+  let symbol = '@';
+  list.style.display = "block";
+  let text = list.textContent
+  if (val.length > 8){
+    x.innerHTML = `<i class='bx bx-check' ></i>`;
+  } 
+})
