@@ -128,6 +128,6 @@ form.addEventListener('keydown', ()=>{
   list.style.display = "block";
   let text = list.textContent
   if (val.length > 8){
-    x.innerHTML = `<i class='bx bx-check' ></i>`;
+    x.className = `bx bx-check`;
   } 
 })
