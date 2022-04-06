@@ -111,7 +111,9 @@ const input = document.getElementById("input");
 const left = document.getElementById("left");
 const list = document.getElementById("list");
 const x = document.getElementById("x");
+const spe = document.getElementById("spe");
 const elForm = document.querySelector(".form");
+const sp = document.getElementById("Spetial")
 
 eye.addEventListener("click", (e)=> {
   e.preventDefault();
@@ -124,10 +126,18 @@ eye.addEventListener("click", (e)=> {
 
 form.addEventListener('keydown', ()=>{
   let val = input.value;
-  let symbol = '@';
+  let a = input.value.includes("@")
   list.style.display = "block";
   let text = list.textContent
   if (val.length > 8){
     x.className = `bx bx-check`;
-  } 
+  }
+  if (a == true) {
+    sp.classList.add("ff");
+    spe.className = `bx bx-check`;
+  }
+  else if (a != true) {
+    spe.className = `bx bx-x`;
+    sp.classList.remove("ff")
+  }
 })

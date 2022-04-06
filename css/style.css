@@ -15,7 +15,9 @@ body {
   flex-direction: column;
 }
 
-
+.ff {
+  color: #fff;
+}
 .form {
   margin-bottom: 50px;
 }
@@ -68,6 +70,6 @@ body {
 .item {
   display: flex;
   align-items: center;
-  color: #fff;
+  color: #ccc;
   margin-bottom: 15px;
 }
