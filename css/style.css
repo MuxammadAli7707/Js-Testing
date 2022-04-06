@@ -7,9 +7,72 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #6ca3f5;
   min-height: 100vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
+
+.form {
+  margin-bottom: 50px;
+}
+.form__box {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding: 25px;
+  background-color: #000;
+}
+.bxs-lock-alt {
+  margin-right: 10px;
+}
+.back {
+  background-color: #fff;
+}
+.btn__ikon {
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+.ikon__color {
+  color: #000;
+}
+.form__input {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.list {
+  padding: 20px 40px;
+  background-color: #000;
+  list-style: none;
+}
+.btnx {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  margin-right: 15px;
+  font-size: 20px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.bx {
+}
+.bx-x {
+}
+.upper {
+}
