@@ -114,7 +114,11 @@ const x = document.getElementById("x");
 const spe = document.getElementById("spe");
 const elForm = document.querySelector(".form");
 const sp = document.getElementById("Spetial");
-const more = document.getElementById("more");
+const more = document.getElementById("More");
+let elUpper = document.getElementById('upper');
+let elUp = document.getElementById("Up");
+let elNumber = document.querySelector('#number');
+let elNum = document.getElementById('Number');
 
 eye.addEventListener("click", (e)=> {
   e.preventDefault();
@@ -125,22 +129,78 @@ eye.addEventListener("click", (e)=> {
 
 });
 
-input.addEventListener('keyup', ()=>{
+form.addEventListener('keyup', ()=>{
   let val = input.value;
-  let a = input.value.includes("@");
-  list.style.opacity = "1"
-  // list.style.display = "block";
-  let text = list.textContent
+  let a = input.value.includes("@")
+  list.style.opacity = "1";
+  let text = list.textContent;
   if (val.length > 8){
     x.className = `bx bx-check`;
     more.classList.add("ff");
   }
   if (a == true) {
-    sp.classList.add("ff");
     spe.className = `bx bx-check`;
+    sp.classList.add("ff");
   }
   else if (a != true) {
     spe.className = `bx bx-x`;
     sp.classList.remove("ff");
   }
-})
+
+  if(val[0] == val[0].toUpperCase()) {
+    elUpper.className = `bx bx-check`;
+    elUp.classList.add("ff");
+
+  }
+
+  if(val.includes('0')) {
+    elNumber.className = `bx bx-check`;
+    elNum.classList.add("ff");
+  }
+
+  if(val.includes('1')) {
+    elNumber.className = `bx bx-check`;
+    elNum.classList.add("ff");
+  }
+
+  if(val.includes('2')) {
+    elNumber.className = `bx bx-check`;
+    elNum.classList.add("ff");
+  }
+
+  if(val.includes('3')) {
+    elNumber.className = `bx bx-check`;
+    elNum.classList.add("ff");
+  }
+
+  if(val.includes('4')) {
+    elNumber.className = `bx bx-check`;
+    elNum.classList.add("ff");
+  }
+
+  if(val.includes('5')) {
+    elNumber.className = `bx bx-check`;
+    elNum.classList.add("ff");
+  }
+
+  if(val.includes('6')) {
+    elNumber.className = `bx bx-check`;
+    elNum.classList.add("ff");
+  }
+
+  if(val.includes('7')) {
+    elNumber.className = `bx bx-check`;
+    elNum.classList.add("ff");
+  }
+
+  if(val.includes('8')) {
+    elNumber.className = `bx bx-check`;
+    elNum.classList.add("ff");
+  }
+
+  if(val.includes('9')) {
+    elNumber.className = `bx bx-check`;
+    elNum.classList.add("ff");
+  }
+});
+
