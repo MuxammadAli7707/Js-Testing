@@ -113,7 +113,8 @@ const list = document.getElementById("list");
 const x = document.getElementById("x");
 const spe = document.getElementById("spe");
 const elForm = document.querySelector(".form");
-const sp = document.getElementById("Spetial")
+const sp = document.getElementById("Spetial");
+const more = document.getElementById("more");
 
 eye.addEventListener("click", (e)=> {
   e.preventDefault();
@@ -124,13 +125,15 @@ eye.addEventListener("click", (e)=> {
 
 });
 
-form.addEventListener('keydown', ()=>{
+input.addEventListener('keyup', ()=>{
   let val = input.value;
-  let a = input.value.includes("@")
-  list.style.display = "block";
+  let a = input.value.includes("@");
+  list.style.opacity = "1"
+  // list.style.display = "block";
   let text = list.textContent
   if (val.length > 8){
     x.className = `bx bx-check`;
+    more.classList.add("ff");
   }
   if (a == true) {
     sp.classList.add("ff");
@@ -138,6 +141,6 @@ form.addEventListener('keydown', ()=>{
   }
   else if (a != true) {
     spe.className = `bx bx-x`;
-    sp.classList.remove("ff")
+    sp.classList.remove("ff");
   }
 })
