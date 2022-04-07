@@ -120,13 +120,22 @@ let elUp = document.getElementById("Up");
 let elNumber = document.querySelector('#number');
 let elNum = document.getElementById('Number');
 
+let a = 0;
 eye.addEventListener("click", (e)=> {
   e.preventDefault();
   form.style.backgroundColor = "#fff";
   left.style.color = "#000";
   eye.style.color = "#000";
   input.style.color = "#000";
+  a++;
 
+  if(a % 2 == 0){
+    form.style.backgroundColor = "#000";
+    left.style.color = "#fff";
+    eye.style.color = "#fff";
+    input.style.color = "#fff";
+    
+  }
 });
 
 form.addEventListener('keyup', ()=>{
